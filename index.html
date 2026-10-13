@@ -1,0 +1,178 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Экоробот — RoboBee, автономный опылитель томатов для промышленных теплиц.">
+  <title>Экоробот · RoboBee</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="site-header">
+  <div class="brand-wrap">
+    <a class="brand" href="#top" aria-label="Экоробот">
+      <span class="brand-leaf">◆</span><span>Экоробот</span>
+    </a>
+    <span class="brand-divider"></span>
+    <a class="product-mark" href="#top"><img src="assets/robobee-emblem.png" alt="RoboBee"></a>
+  </div>
+  <nav class="nav">
+    <a href="#about">О проекте</a>
+    <a href="#how">Как работает</a>
+    <a href="#advantages">Преимущества</a>
+    <a href="#growth">Развитие</a>
+  </nav>
+  <a class="nav-cta" href="mailto:dubkomaxim@gmail.com">Связаться <span>↗</span></a>
+</header>
+
+<main id="top">
+  <!--
+    ДЕКОР — ЭТО ОТДЕЛЬНЫЙ СЛОЙ СТРАНИЦЫ.
+    Здесь можно самостоятельно добавлять, удалять и двигать помидорки, листики и кружочки.
+
+    Чтобы поставить элемент в нужное место, меняйте только left и top в процентах:
+      left: 10%;  top: 25%;
+    0% — левый/верхний край страницы, 100% — правый/нижний край страницы.
+
+    Пример: <span class="page-decor decor-tomato" style="left:10%;top:25%"></span>
+    Анимация уже подключена: элементы плавно двигаются сами.
+  -->
+  <div class="page-decor-layer" aria-hidden="true">
+    <span class="page-decor decor-tomato" style="left:60%;top:40vh;"></span>
+    <span class="page-decor decor-tomato" style="left:88%;top:10vh"></span>
+    <span class="page-decor decor-tomato" style="left:5%;top:20%;--size:110px"></span>
+    <span class="page-decor decor-leaf" style="left:24%;top:31%;"></span>
+    <span class="page-decor decor-leaf" style="left:24%;top:31%;"></span>
+    <span class="page-decor decor-circle" style="left:47%;top:14%"></span>
+    <span class="page-decor decor-tomato" style="left:87%;top:28%"></span>
+    <span class="page-decor decor-leaf" style="left:72%;top:48%"></span>
+    <span class="page-decor decor-circle" style="left:12%;top:57%"></span>
+    <span class="page-decor decor-tomato" style="left:91%;top:66%;--size:150px"></span>
+    <span class="page-decor decor-leaf" style="left:38%;top:76%"></span>
+    <span class="page-decor decor-circle" style="left:62%;top:87%"></span>
+  </div>
+  <!-- HERO: робот намеренно НЕ вставлен. Его можно добавить самостоятельно поверх .hero-scene. -->
+  <section class="hero">
+    <div class="hero-copy">
+      <div class="grant">
+        <img src="assets/fond-logo.png" alt="Фонд содействия инновациям">
+        <div><b>Проект реализован при поддержке Фонда
+содействия инновациям в рамках программы «Студенческий стартап» мероприятия
+«Платформа университетского технологического предпринимательства» федерального
+проекта «Технологии»</span></div>
+      </div>
+
+      <div class="eyebrow"><span></span> Экоробот · RoboBee · прототип</div>
+      <h1>RoboBee — автономный<br><em>опылитель томатов</em></h1>
+      <p class="hero-subtitle">Аналог шмелям для промышленных теплиц.</p>
+      <p class="lead">Эффективное решение для автоматизации опыления в закрытом грунте.</p>
+
+      <div class="hero-facts">
+        <div class="fact highlight"><strong>до 3 м</strong><span>по высоте</span><small>реализовано и протестировано</small></div>
+        <div class="fact"><strong>движется</strong><span>вдоль рядов томатов</span></div>
+        <div class="fact"><strong>вибрация</strong><span>принцип опыления шмелей</span></div>
+      </div>
+      <div class="hero-links"><a href="#how" class="primary">Как это работает <span>↓</span></a><a href="#growth" class="secondary">О развитии проекта</a></div>
+    </div>
+
+    <!-- Фотографический фон: только теплица, без робота и без декора. -->
+    <div class="hero-scene" aria-label="Ряды томатов в промышленной теплице">
+      <div class="hero-photo" aria-hidden="true"></div>
+    <img class="hero-robot" src="assets/robot-full.png" alt="Робот RoboBee" aria-hidden="true">
+    </div>
+  </section>
+
+  <section class="intro section" id="about">
+    <div class="section-kicker">01 · Идея</div>
+    <div class="intro-grid">
+      <div><h2>Принцип шмелиного<br><span>опыления — в роботе.</span></h2></div>
+      <div>
+        <p>В основе RoboBee — механическая вибрация соцветия, то есть принцип buzz pollination, который используется при опылении томатов шмелями.</p>
+        <p class="muted">RoboBee разрабатывается как автономное решение для промышленных теплиц: робот движется вдоль ряда, распознаёт соцветие и выполняет опыление без остановки.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="advantages section" id="advantages">
+    <div class="section-kicker">02 · Преимущества</div>
+    <div class="advantages-grid">
+      <article class="advantage"><div class="adv-icon">☼</div><h3>Работает вне зависимости от погоды и времени года</h3><p>Опыление выполняется внутри теплицы и не зависит от внешних погодных условий.</p></article>
+      <article class="advantage"><div class="adv-icon">✿</div><h3>Равномерное опыление</h3><p>Система работает последовательно по рядам и помогает сделать процесс более повторяемым.</p></article>
+      <article class="advantage"><div class="adv-icon">✓</div><h3>Планируется дезинфекция после прохождения каждого ряда</h3><p>Дальнейшее развитие системы предусматривает обработку после прохождения ряда.</p></article>
+    </div>
+  </section>
+
+  <section class="how section" id="how">
+    <div class="section-head">
+      <div><div class="section-kicker">03 · Как работает</div><h2>Точная работа<br><span>с каждым соцветием.</span></h2></div>
+      <div class="section-note">Робот работает с полным соцветием — веткой с несколькими цветами. Рабочий орган передаёт вибрацию именно соцветию.</div>
+    </div>
+
+    <div class="how-grid">
+      <div class="detail-card">
+        <img src="assets/robot-detail.png" alt="Верхний рабочий модуль RoboBee">
+        <!-- Стрелки только в зоне механизма, которую пользователь отметил на исходном изображении. -->
+        <div class="motion motion-height"><span>↕</span><b>подъём / опускание<br>верхнего модуля</b><small>до 3 м</small></div>
+        <div class="motion motion-window"><span>↔</span><b>движение каретки<br>в окне</b></div>
+        <div class="motion motion-extend"><span>→</span><b>выдвижение<br>к растению</b></div>
+        <div class="motion motion-tilt"><span>↕</span><b>наклон<br>рабочего механизма</b><small>≈ ±20°</small></div>
+        <div class="motion motion-end"><span>↔</span><b>поворот конечного<br>элемента</b></div>
+      </div>
+
+      <div class="steps">
+        <div class="step"><b>01</b><div><h3>Соцветие обнаружено</h3><p>Камеры впереди по текущему направлению движения заранее находят нужное соцветие.</p></div></div>
+        <div class="step"><b>02</b><div><h3>Выбирается высота</h3><p>Верхний модуль подводится к нужному уровню; подъём до 3 м уже реализован и протестирован.</p></div></div>
+        <div class="step"><b>03</b><div><h3>Каретка компенсирует движение</h3><p>Робот продолжает двигаться, а каретка перемещается в своём окне относительно направления движения.</p></div></div>
+        <div class="step"><b>04</b><div><h3>Рабочий механизм наводится</h3><p>Каретка выдвигается, наклоняется и поворачивает конечный элемент, обходя стебель.</p></div></div>
+        <div class="step"><b>05</b><div><h3>Вибрация передаётся соцветию</h3><p>Рабочий орган вибрирует полное соцветие — ветку с несколькими цветами.</p></div></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="vision section">
+    <div class="vision-grid">
+      <div>
+        <div class="section-kicker">04 · Система зрения</div>
+        <h2>Зрение работает<br><span>в ритме движения.</span></h2>
+        <p>На каждой стороне робота расположены две пары камер — в начале и в конце верхнего модуля. «Передней» становится пара, которая находится впереди относительно текущего направления движения.</p>
+        <div class="vision-facts">
+          <div><b>4 пары камер</b><span>предварительное обнаружение соцветий</span></div>
+          <div><b>Камера на каретке</b><span>уточнение положения перед опылением</span></div>
+        </div>
+      </div>
+      <div class="vision-statement">
+        <span class="vision-number">01</span>
+        <strong>Эффективное решение для автоматизации опыления в закрытом грунте.</strong>
+        <p>Система зрения и механика работают как единый цикл: увидеть → навести → вибрировать → двигаться дальше.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="growth section" id="growth">
+    <div class="section-head">
+      <div><div class="section-kicker">05 · Развитие</div><h2>От прототипа<br><span>к автономной системе.</span></h2></div>
+      <p class="section-note">RoboBee уже имеет рабочий механизм подъёма до 3 м. Остальная конструкция и алгоритмы продолжают развиваться.</p>
+    </div>
+    <div class="timeline">
+      <div class="milestone done"><span>01</span><h3>Прототип</h3><p>Собрана и проверяется базовая роботизированная система.</p></div>
+      <div class="milestone done"><span>02</span><h3>Подъём до 3 м</h3><p>Функция реализована и протестирована.</p></div>
+      <div class="milestone current"><span>03</span><h3>Испытания</h3><p>Отработка движения, зрения и наведения на соцветия.</p></div>
+      <div class="milestone"><span>04</span><h3>Дальнейшая автономизация</h3><p>Развитие алгоритмов и системы управления.</p></div>
+    </div>
+  </section>
+
+  <section class="contact section">
+    <div class="contact-card">
+      <div><div class="section-kicker">Экоробот · RoboBee</div><h2>Развиваем автоматизацию<br><em>опыления в теплицах.</em></h2></div>
+      <a class="contact-button" href="mailto:info@ekorobot.ru">Связаться с командой <span>↗</span></a>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="footer-left"><img src="assets/fond-logo.png" alt="Фонд содействия инновациям"><span>Проект поддержан Фондом содействия инновациям</span></div>
+  <span>© Экоробот · RoboBee · прототип</span>
+</footer>
+<script src="script.js"></script>
+</body>
+</html>
